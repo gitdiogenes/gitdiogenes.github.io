@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Musician's Headquarters</title>
+        
+    </head>
+    <body>
+        <style>
+         html {
+             box-sizing: border-box;
+         }
+         *{
+             margin:0; padding: 0;
+         }
+         body{
+             font-family: sans-serif;
+             margin:0;
+             background-image: linear-gradient(260deg, #8b2500 0%, #000000 100%);
+            
+         }
+         a{
+             color:white;
+             font-weight:100;
+             letter-spacing: 2px;
+             text-decoration:none;
+             background:rgba(0,0,0,0.2);
+             padding:20px 5px;
+             display:inline-block;
+             width:100%;
+             text-align: center;
+             transition:all 0.5s;
+           
+         }
+      
+         .flex-nav ul{
+             border:1px solid black;
+             list-style:none;
+             margin:0;
+             padding: 0;
+             display:flex;
+         }
+         .Fstart ul{
+             list-style:none;
+             margin:0;
+             padding:0;
+             display:flex;
+             align-content: flex-start;
+             flex-flow:column;
+             width:200px;
+         }
+         .Fstart li button{
+             color:white;
+             font-weight:100;
+             letter-spacing: 2px;
+             text-decoration:none;
+             background:rgba(0,0,0,0.2);
+             padding : 20px 5px;
+             text-align: center;
+             border-color:inherit;
+             width:100%;
+         }
+         .flex-nav li{
+             flex:3;
+         }
+         #box{
+             width:1000px;
+             overflow:hidden;
+             margin: 50px auto;
+             background: navy;
+         }
+         .photobanner{
+             height: 120px;
+             width:3550px;
+             margin-bottom: 80px;
+         }
+         .photobanner img{
+             transition: all 1s ease;
+         }
+         .photobanner img:hover{
+             transform: scale(1.1);
+             cursor:pointer;
+             box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+         }
+         
+         .first{
+             animation: bannermove 50s linear infinite;
+             animation-name:bannermove;
+             animation-duration:50s;
+         }
+         @keyframes bannermove{
+            0%{
+                margin-left: 0px;
+            } 
+            100%{
+                margin-left:-2125px;
+            }
+         }
+       
+         @media all and (max-width:500px){
+             a{
+                 flex-shrink:1;
+                 text-align:center;
+                 font-size:10px;
+                 flex-wrap:wrap;
+             }
+             .Fstart ul{
+                 width:120px;
+             }
+            
+         }
+        
+        </style>
+    
+        <div class="wrapper">
+            <nav class="flex-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ebay</a></li>
+                    <li><a href="#">Pictures</a></li>
+                    <li><a href="#">Directions</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="#">Repairs/Installs</a></li>
+                </ul>
+            </nav>
+            <nav class="Fstart">
+                <ul>
+                    <li><button>Guitars</button></li>
+                    <li><button>Basses</button></li>
+                    <li><button>Amps</button></li>
+                    <li><button>Keyboards</button></li>
+                    <li><button>PA Gear</button></li>
+                    <li><button>Drums</button></li>
+                    <li><button>Accessories</button></li>
+                </ul>
+                <div id="box">
+                    <div class="photobanner">
+               <img class="first" src='http://lorempixel.com/400/200'> 
+               <img src='http://lorempixel.com/400/200'>
+               <img src='http://lorempixel.com/400/200'>
+               <img src='http://lorempixel.com/400/200'>
+               <img src='http://lorempixel.com/400/200'>
+               <img src='http://lorempixel.com/400/200'>
+               <img src='http://lorempixel.com/400/200'>
+               </div>
+                </div>
+            </nav>
+        </div>
+    </body>
+</html>
