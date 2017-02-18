@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>"farts"</title>
+       </head>
+    <body>
+        <style type="text/css">
+            :root{
+                -- opacity:0.5;
+            }
+            .key{
+                font-size:1.5rem;
+                padding:1rem .5rem;
+                transition:all 0.07s;
+                width:100px;
+                text-align: center;
+                color:white;
+                background:rgba(0,0,0,0.4);
+                text-shadow:0 0 5px black;
+                opacity: var(--opacity);
+            }
+            .playing{
+                transform:scale(1.1);
+                border-color:#ffc000;
+                text-shadow:0 0 5px black;
+            }
+            @media all and (max-width:500px);
+        </style> 
+     <input id = "Email" type ="Email" placeholder="Your Email"> </input>
+     <button id ="submit">Submit</button>
+     <div class= "Keys">
+             <div data-key="70" class="key">
+                 <kbd>F</kbd>
+             </div>
+         <button id = fart>Button</button>
+     </div>
+     <div class="controls">
+         <label for="blur">Blur:</label>
+         <input type="range" min="2" max="200" name="blur" data-sizing="px"></input>
+         <div class="box">
+             <ul>
+                 <il>item1</il>
+                 <il>item2</il>
+                 <il>item3</il>
+                 <il>item4</il>
+                 <il>item5</il>
+                 <il>item6</il>
+             </ul>
+         </div>
+     </div>
+     <script>
+        console.log('fart');
+         window.addEventListener('keydown', function(e){
+             if(e.keyCode === 70){
+            const key = document.querySelector('.key');
+            key.classList.add('playing');
+            console.log(e);
+         }});
+         
+            const key = document.querySelector('.key');
+         function removeTransition(e){
+             if(e.propertyName !== 'transform') return;
+             this.classList.remove('playing');
+         }
+            key.addEventListener('transitionend',removeTransition);
+            function handleUpdate(){
+                const suffix = this.dataset.sizing || '';
+                document.documentElement.style.setProperty('--'+this.name,this.value+suffix);
+                console.log(blurz);
+            }
+            const blurz=document.querySelector('.controls input');
+            blurz.addEventListener('change',handleUpdate);
+            
+     </script>
+
+    </body>
+    <link rel="script" type="text/javascript" src="project.js">
+</html>
