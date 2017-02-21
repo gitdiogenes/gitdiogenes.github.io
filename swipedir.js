@@ -34,7 +34,7 @@ window.addEventListener('load', function(){
             e.preventDefault()// no scrolling!
         },false)
         
-        touchsurface.addEventListener('touchend'), function(e){
+        touchsurface.addEventListener('touchend', function(e){
         var touchobj = e.changedTouches[0]
         distX = touchobj.pageX - startX // horizontal dist traveled while in contact
         distY = touchobj.pageY - startY// get vertical while contact
