@@ -50,11 +50,11 @@ window.addEventListener('load', function(){
         handleswipe(swipedir)
         e.preventDefault()
         },false)
+        
+      swipedetect(slider1,swipedir);
     }
     
-        swipedetect(slider1,function(swipedir)){
-            console.log(swipedir);
-        }
+})
     
     
     
@@ -62,5 +62,3 @@ window.addEventListener('load', function(){
     
     
     
-    
-}
