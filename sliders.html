@@ -9,7 +9,7 @@ body{background:#ccc;}
 
 
 
-.slider{
+.slider1{
     width:640px;
     position:relative;
     padding-top:320px;
@@ -23,11 +23,11 @@ body{background:#ccc;}
     transition:all 0.5s;
 }
 
-.slider input[name='slide_switch']{
+.slider1 input[name='slide_switch']{
     display:none;
 }
 
-.slider label{
+.slider1 label{
     margin:18px 0 0 18px;
     border:3px solid#999;
     
@@ -38,22 +38,22 @@ body{background:#ccc;}
     opacity:0.6;
 }
 
-.slider label img{
+.slider1 label img{
     display:block;
 }
 
-.slider input[name='slide_switch']:checked+label{
+.slider1 input[name='slide_switch']:checked+label{
     border-color:#666;
     opacity:1;
     transform:scale(1.1);
 }
 
-.slider input[name='slide_switch']~ img{
+.slider1 input[name='slide_switch']~ img{
     opacity:0;
     transform:scale(1.1);
 }
 
-.slider input[name='slide_switch']:checked+label+img{
+.slider1 input[name='slide_switch']:checked+label+img{
     opacity:1;
     transform:scale(1);
 }
