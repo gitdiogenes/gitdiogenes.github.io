@@ -40,10 +40,10 @@ window.addEventListener('load', function(){
         distY = touchobj.pageY - startY// get vertical while contact
         elapsedTime = new Date().getTime() - startTime // get time elapsed
         if (elapsedTime <= allowedTime){
-            if (Math.abs(distX)) >= threshold && Math.abs(distY) <= restraint){
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){
                 swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
             }
-            else if (Math.abs(distY)) >= threshold && Math.abs(distX) <= restraint) {// 2nd condition for vertical swipe met
+            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint) {// 2nd condition for vertical swipe met
             swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
         }
         }
