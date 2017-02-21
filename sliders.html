@@ -3,39 +3,95 @@
          <head>
              <meta charset="UTF-8">
              <meta name ="viewport" content= "width=device-width,initial-scale=1"/>
+             <style>
+                 *{margin:0;padding:0;}
+body{background:#ccc;}
+
+
+
+.slider{
+    width:640px;
+    position:relative;
+    padding-top:320px;
+    margin:100px auto;
+    box-shadow:0 10px 20px -5px rgba(0,0,0,0.75);
+}
+
+.slider>img{
+    position:absolute;
+    left:0;top:0;
+    transition:all 0.5s;
+}
+
+.slider input[name='slide_switch']{
+    display:none;
+}
+
+.slider label{
+    margin:18px 0 0 18px;
+    border:3px solid#999;
+    
+    float:left;
+    cursor:pointer;
+    transition:all 0.5s;
+    
+    opacity:0.6;
+}
+
+.slider label img{
+    display:block;
+}
+
+.slider input[name='slide_switch']:checked+label{
+    border-color:#666;
+    opacity:1;
+    transform:scale(1.1);
+}
+
+.slider input[name='slide_switch']~ img{
+    opacity:0;
+    transform:scale(1.1);
+}
+
+.slider input[name='slide_switch']:checked+label+img{
+    opacity:1;
+    transform:scale(1);
+}
+             </style>
          </head>
          <body>
-            <style>
-               #splash-container{
-                   width:1000px;
-                   overflow:hidden;
-                   margin:50px auto;
-                   background:navy;
-               }
-               #touchsurface{
-                   height:120px;
-                   width:3550px;
-                   margin-bottom:80px;
-               }
-               #touchsurface img{
-                   transition:all 1s ease;
-                   draggable:false;
-               }
-            </style> 
-            <div id="splash-container">
-                <div id="touchsurface">
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                    <img src='http://lorempixel.com/400/200'>
-                </div>
+            <div class="slider"> 
+                <input type="radio" name = "slide_switch" id="id1"/>
+                    <label for="id1">
+                        <img src="http://lorempixel.com/400/200" width="100"/>
+                    </label>
+                <img src ="http://lorempixel.com/400/200"/>
+    
                 
                 
-            </div>
+                <input type="radio" name = "slide_switch" id="id2" checked="checked"/>
+                    <label for="id2">
+                        <img src="http://lorempixel.com/400/200" width="100"/>
+                    </label>
+                    <img src="http://lorempixel.com/400/200"/>
+                    
+                <input type="radio" name="slide_switch" id="id3" />
+                        <label for="id3">
+                            <img src="http://lorempixel.com/400/200" width="100"/>
+                        </label>
+                    <img src="http://lorempixel.com/400/200"/>
+                        
+                <input type="radio" name="slide_switch" id="id4" />
+                        <label for="id4">
+                            <img src="" width="100"/>
+                        </label>
+                        <img src=""/>
+                 <input type="radio" name="slide_switch" id="id5" />
+                        <label for="id6">
+                        </label>
+                        <img src=""/>
+               </div> 
+            
          </body>
          <script type ="text/javascript" src="mhscript.js"></script>
              
