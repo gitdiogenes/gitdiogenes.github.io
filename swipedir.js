@@ -1,4 +1,4 @@
-<script>
+
 window.addEventListener('load', function(){
     
     var slider1 = document.getElementById('slider1')
