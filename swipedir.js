@@ -52,7 +52,9 @@ window.addEventListener('load', function(){
         },false)
     }
     
-    
+        swipedetect(slider1,function(swipedir)){
+            console.log(swipedir);
+        }
     
     
     
