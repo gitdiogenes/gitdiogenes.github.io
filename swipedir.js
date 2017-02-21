@@ -1,4 +1,10 @@
 <script>
+window.addEventListener('load', function(){
+    
+    var slider1 = document.getElementById('slider1')
+
+
+
     function swipedetect(el, callback){
     
         var touchsurface = el,
@@ -45,3 +51,14 @@
         e.preventDefault()
         },false)
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
