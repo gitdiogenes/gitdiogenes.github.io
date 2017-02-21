@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
         startTime;
         
        
-}
+
 
     touchsurface.addEventListener('touchstart', function(e) {
         touchsurface.innerHTML =''
@@ -33,5 +33,5 @@ window.addEventListener('load', function(){
         handleswipe(swiperightBol)
         e.preventDefault()
     }, false);// end window.onload
-    
+},false);
     </script>
