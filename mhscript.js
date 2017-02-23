@@ -16,11 +16,13 @@ var board = document.getElementsByClassName("slider-board");
 gesturedZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
     touchstartY = event.changedTouches[0].screenY;
+    event.preventDefault();
 }, false);
 
 gesturedZone.addEventListener('touchend', function(event) {
     touchendX = event.changedTouches[0].screenX;
     touchendY = event.changedTouches[0].screenY;
+    event.preventDefault();
     handleGesture();
 }, false); 
 
