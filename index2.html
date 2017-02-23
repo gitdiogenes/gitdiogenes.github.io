@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content= "width=device-width,initial-scale=1"/>
+        <title>Musicians Headquarters</title>
+        <script type="text/javascript" src="mhscript.js" async></script>
+    </head>
+    <body>
+        <style>
+        .wrapper{
+            padding:45px 8px;
+        }
+            .card-container{
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:stretch;
+
+            }
+            .card-container>div{
+               height:200px;
+                background-color:#241E1D;
+               margin:5px;
+                box-shadow:0 10px 20px -5px rgba(0,0,0,0.75);
+
+
+            }
+            .op-card{
+                opacity:0.6;
+                color:white;
+
+            }
+            .header {
+                top:0px;
+                left:0px;
+                height:45px;
+                width:100%;
+                background:red;
+                position:fixed;
+                overflow:hidden;
+                z-index:10;
+
+            }
+            .slider-board{
+                width:100%;
+                margin:auto;
+
+            }
+            .slider1 label{
+                border:3px solid#999;
+                border-radius:25px;
+                transition:all 0.5s;
+                opacity:0.6;
+                cursor:pointer;
+
+            }
+
+
+            .slider1 input[name='slide_switch']{
+              display:none;
+            }
+            .sliderlblimg{
+                width:60px;
+            }
+            #slider-container{
+              height:360px;
+            }
+        </style>
+        <header class="header">Musicians Headquarters</header>
+        <div class="wrapper">
+
+        <div class="card-container">
+          <div class="op-card"><p>farts</p></p></div>
+          <div class="op-card"><p>farts</p></p></div>
+          <div class="op-card"><p>farts</p></p></div>
+            <div id="slider-container">
+                <img class="slider-board"src="http://lorempixel.com/400/200"/>
+                <div class="slider1">
+                <input type="radio" name = "slide_switch" />
+        <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+        </label>
+                 <input type="radio" name = "slide_switch" />
+        <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+                <input type="radio" name = "slide_switch" />
+        <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+  <input type="radio" name = "slide_switch" />
+                    <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+                <input type="radio" name = "slide_switch" />
+                    <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+
+                     <input type="radio" name = "slide_switch" />
+                    <label for="id1">
+                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+               </div>
+               <div></div>
+               <!--fartsfartsfart-->
+            </div>
+        </div>
+        </div>
+        <script rel="javascript" src="mhscript.js" type="text/javascript"></script>
+    </body>
+</html>
