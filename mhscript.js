@@ -2,7 +2,7 @@
 //  do farts = a document.getElementsByName('name_value')
       //then on farts.addEventListener("click", function "change .src")
 var cur = 0;   
-var ProductSliderSRC = ["1","2","3","4","5"];   
+var productSliderSRC = ["1","2","3","4","5"];   
       
 var touchstartX = 0;
 var touchstartY = 0;
@@ -59,5 +59,5 @@ function handleGesture() {
 //     }
 //     if (touchendY == touchstartY) {
       //   alert('tap!');
-    }
+    
 }
