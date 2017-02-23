@@ -11,6 +11,7 @@ var touchendY = 0;
 var swipedir ;
 
 var gesturedZone = document.getElementById('slider-container');
+var board = document.getElementsByClassName("slider-board");
 
 gesturedZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
@@ -37,12 +38,12 @@ function handleGesture() {
             swipedir = (distY < 0)? 'up' : 'down' }// if dist traveled is negative, i
 
       if(swipedir ==='right'){
-            cur++;
-            gesturedZone.src = productSliderSRC[cur] ;
+            cur =(cur +1) % productSliderSRC.length;
+            board.src = productSliderSRC[cur] ;
       }
       else if (swipedir ==='left'){
-            cur--;
-            gesturedZone.src = productSliderSRC[cur];
+            cur=(cur -1) % productSliderSRC.length;
+           board.src = productSliderSRC[cur];
       }
 //     var swiped = 'swiped: ';
 //     if (touchendX < touchstartX) {
