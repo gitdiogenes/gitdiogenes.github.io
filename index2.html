@@ -42,10 +42,14 @@
                 z-index:10;
 
             }
-            .slider-board{
-                width:100%;
+          
+            .slider-board[data-state=open]{
+               width:100%;
                 margin:auto;
-
+            }
+            .slider-board[data-state=closed]{
+               display:none;
+                
             }
             .slider1 label{
                 border:3px solid#999;
@@ -66,6 +70,13 @@
             #slider-container{
               height:360px;
             }
+            .pop{
+                transform:scale(1.1);
+                 border-color:#ffc000;
+                text-shadow:0 0 5px black;
+                transition:.5s;
+            }
+       
         </style>
         <header class="header">Musicians Headquarters</header>
         <div class="wrapper">
@@ -75,32 +86,38 @@
           <div class="op-card"><p>farts</p></p></div>
           <div class="op-card"><p>farts</p></p></div>
             <div id="slider-container">
-                <img class="slider-board"src="http://lorempixel.com/400/200"/>
+                
+                <img class="slider-board" data-state=open src="http://lorempixel.com/400/200"/>
+                <img class="slider-board" data-state=closed src="https://dummyimage.com/300.png/09f/fff"/>
+                <img class="slider-board" data-state=closed src="https://placehold.it/400X200"/>
+                <img class="slider-board" data-state=closed src="http://fillmurray.com/200/300"/>
+                <img class="slider-board" data-state=closed src="http://placecage.com/400/200"/>
+                <img class="slider-board" data-state=closed src="http://lorempixel.com/400/200"/>
+            
                 <div class="slider1">
                 <input type="radio" name = "slide_switch" />
-        <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
-        </label>
+                    <label for="id1">
+                     <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
                  <input type="radio" name = "slide_switch" />
-        <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
-                    </label>
-                <input type="radio" name = "slide_switch" />
-        <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
-                    </label>
-  <input type="radio" name = "slide_switch" />
                     <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
                     </label>
                 <input type="radio" name = "slide_switch" />
                     <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
                     </label>
-
-                     <input type="radio" name = "slide_switch" />
+                <input type="radio" name = "slide_switch" />
                     <label for="id1">
-                        <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+                <input type="radio" name = "slide_switch" />
+                    <label for="id1">
+                    <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
+                    </label>
+                <input type="radio" name = "slide_switch" />
+                    <label for="id1">
+                    <img src="http://lorempixel.com/400/200" class="sliderlblimg"/>
                     </label>
                </div>
                <div></div>
