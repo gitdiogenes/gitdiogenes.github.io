@@ -35,7 +35,7 @@ function handleGesture() {
       var distX = touchendX - touchstartX;
       var distY = touchendY - touchstartY;
       var threshold = 45;
-      var restraint = 10;
+      var restraint = 20;
       // console.log(Math.abs(distX),Math.abs(distY));
       
        if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){
