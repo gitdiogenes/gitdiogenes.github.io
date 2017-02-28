@@ -12,7 +12,7 @@ var gesturedZone = document.getElementById('slider-container');
 var sldrBRD = document.getElementsByClassName("slider-board"); 
  
 
-console.log(sldrBRD[cur]);
+console.log(sldrBRD.length);
 
 
 
@@ -22,12 +22,12 @@ gesturedZone.addEventListener('touchstart', function(event) {
     document.querySelector('[data-state=open]').classList.add('pop');
     event.preventDefault();
 }, false);
-
+console.log('inbetween');
 gesturedZone.addEventListener('touchend', function(event) {
     touchendX = event.changedTouches[0].screenX;
     touchendY = event.changedTouches[0].screenY;
     event.preventDefault();
-//     console.log('about to call handle gest');
+  console.log('about to call handle gest');
     handleGesture();
 }, false); 
 
@@ -58,9 +58,10 @@ function handleGesture() {
             }}
             console.log(sldrBRD[cur]);
             console.log(cur);
+            return;
       }
       else if (swipedir ==='left'){
-            if(cur > sldrBRD.length){
+            if(cur == sldrBRD.length -1){
                   cur = 0
             }else{
             ++cur;}
@@ -70,11 +71,10 @@ function handleGesture() {
                    if(sldrBRD[i] !== sldrBRD[cur]){
              sldrBRD[i].setAttribute('data-state','closed');
      document.querySelector('[data-state=open]').classList.remove('pop');
-             }}
+             }else{ document.querySelector('[data-state=open]').classList.remove('pop');}}
              console.log(sldrBRD[cur]);
     
-           
-           console.log("tothemax");
+         return; 
       //     console.log(prevL);
       }
     
