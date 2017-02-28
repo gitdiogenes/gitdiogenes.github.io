@@ -77,7 +77,8 @@ function handleGesture() {
          return; 
       //     console.log(prevL);
       }
-    
+      else{
+     document.querySelector('[data-state=open]').classList.remove('pop');}
 
 //     var swiped = 'swiped: ';
 //     if (touchendX < touchstartX) {
