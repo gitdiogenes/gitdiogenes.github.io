@@ -1,6 +1,4 @@
-
-//  do farts = a document.getElementsByName('name_value')
-      //then on farts.addEventListener("click", function "change .src")
+// elements for scroller "slider"
 var cur = 0;  
       
 var touchstartX = 0;
@@ -11,6 +9,32 @@ var swipedir ;
 var gesturedZone = document.getElementById('slider-container');
 var sldrBRD = document.getElementsByClassName("slider-board"); 
  
+//  elements for nav link 
+var thing1 = document.getElementById("thing1");
+var thing2 = document.getElementById("thing2");
+var thing3 = document.getElementById("thing3");
+var thing4 = document.getElementById("thing4");
+var cards =  document.getElementsByClassName("op-card");
+
+
+console.log(cards[0].classList.value+ "cards");
+
+
+// event listeners for nav links
+
+thing1.addEventListener("click",() =>{clearFlexClass(); cards[0].classList.add("bubble") });
+thing2.addEventListener("click",() =>{clearFlexClass();  cards[1].classList.add("bubble") });
+thing3.addEventListener("click",() =>{clearFlexClass();  cards[2].classList.add("bubble") });
+thing4.addEventListener("click",() =>{clearFlexClass();  cards[3].classList.add("bubble") });
+
+// function for clearing classes from nav links
+function clearFlexClass(){
+ cards[0].classList.remove("bubble");
+ cards[1].classList.remove("bubble");
+ cards[2].classList.remove("bubble");
+ cards[3].classList.remove("bubble");
+ 
+}
 
 console.log(sldrBRD.length);
 
