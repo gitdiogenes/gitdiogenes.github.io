@@ -11,21 +11,32 @@
             margin:0;
         }
         .hero{
-            background-color:black;
-            left:0;
+            
             width:100%;
-            padding:37px 0px 0px 0px;
+            padding:45px 0px 5px 0px;
             color:white;
             z-index:5;
+            display:flex;
+            justify-content:center;
+            position:relative;
+          
+            
+            
+        }
+        .hero img{
+            width:100%;
+            margin:0px 10px 0px 10px;
+            
         }
         .wrapper{
-            padding:45px 8px;
+            padding:5px 8px;
         }
             .card-container{
                 display:flex;
                 flex-direction:column;
                 justify-content:center;
-                align-items:stretch;
+                align-items:center;
+                max-width:100%;
 
             }
             .card-container>div{
@@ -33,6 +44,7 @@
                 background-color:#241E1D;
                margin:5px;
                 box-shadow:0 10px 20px -5px rgba(0,0,0,0.75);
+               width:100%;
 
 
             }
@@ -46,10 +58,12 @@
                 left:0px;
                 height:45px;
                 width:100%;
-                background-color:#c9c9c9;
+                background:linear (#8f1425,#4d0f19);
                 position:fixed;
                 overflow:hidden;
                 z-index:10;
+                box-shadow:0 1px 18px -5px rgba(0,0,0,0.75);
+                
             }
           
             .slider-board[data-state=open]{
@@ -95,8 +109,8 @@
             .button{
                 border:none;
                 background:none;
-                font-family:'roboto',sans-serif;
                 font-size:1.1em;
+                font-family:'roboto',sans-serif;
                 /*font-weight:600;*/
                 letter-spacing:.5px;
                 padding:0px 0px 0px 2px;
@@ -107,6 +121,24 @@
                 width:300px;
                 padding:13px 0px 0px 40px;
                
+                
+            }
+            .hero-text{
+                    color:#ffffff;
+                   position: absolute; 
+                   top: 130px; 
+                   left:9%;
+                   font-family:'roboto',sans-serif;
+                   font-size:1.6em;
+                   width: 100%; 
+                   background: rgba(0, 0, 0, 0.7);
+                   letter-spacing:.1em;
+                   text-indent:20px;
+            }
+            #extra{
+                font-size:1.7em;
+                padding:10px;
+                color:#8f1425;
                 
             }
           
@@ -123,7 +155,11 @@
             </div>
             
         </header>
-        <div class="hero"><img src="http://fillmurray.com/200/300"/></div>
+        <div class="hero"><p class="hero-text">Find Your <br><strong id="extra">Treasure</strong></p>
+      
+        <img src="MH guitarsEDIT.jpg"/>
+        </div>
+
         <div class="wrapper">
 
         <div class="card-container">
